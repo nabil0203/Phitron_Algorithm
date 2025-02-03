@@ -17,19 +17,43 @@ int main()
 
         adj_list[a].push_back(b);
 
-        adj_list[b].push_back(a); // only change
-
-        for (int i = 0; i < n; i++)
-        {
-            cout << i << " -> ";
-
-            for (int x : adj_list[i])
-            {
-                cout << x << " ";
-            }
-            cout << endl;
-        }
-
-        return 0;
+//      adj_list[b].push_back(a);                       // only change
     }
+
+
+    for (int i = 0; i < n; i++)
+    {
+        cout << i << " -> ";
+
+        for (int x : adj_list[i])
+        {
+            cout << x << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
 }
+
+
+
+
+
+/*
+
+Input:
+5 5
+0 1
+0 2
+3 0
+1 3
+3 4
+
+Output:
+0 -> 1 2 
+1 -> 3 
+2 -> 
+3 -> 0 4 
+4 -> 
+
+*/
