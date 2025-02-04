@@ -87,7 +87,7 @@ int main()
 
 
 
-    vector<int> path;
+    vector<int> path;                                            // vector used to Reverse the path; Bcz we are getting the path Reversely at the beginning 
     int node = destination;
 
     while (node!= -1)
@@ -96,7 +96,7 @@ int main()
         node = parent[node];
     }
 
-    reverse(path.begin(),path.end());
+    reverse(path.begin(),path.end());                                // reversing that vector
     for(int x : path)
     {
         cout << x << " ";
