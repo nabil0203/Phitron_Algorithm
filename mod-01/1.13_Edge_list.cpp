@@ -6,7 +6,7 @@ int main()
     int n, e;
     cin >> n >> e;
 
-    vector<pair<int,int>> edge_list;                          // pair type vector; each index of Vector has a Pair
+    vector<pair<int,int>> edge_list;                          // pair type vector; each index of Vector has a Pair of two Nodes
 
 
 
