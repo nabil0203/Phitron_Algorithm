@@ -87,15 +87,20 @@ int main()
 
 
 
-
+    vector<int> path;
     int node = destination;
 
     while (node!= -1)
     {
-        cout << node << " ";
+         path.push_back(node);
         node = parent[node];
     }
-    
+
+    reverse(path.begin(),path.end());
+    for(int x : path)
+    {
+        cout << x << " ";
+    }
 
 
 
