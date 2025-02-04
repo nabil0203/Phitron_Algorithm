@@ -6,7 +6,7 @@ int main()
     int n, e;
     cin >> n >> e;
 
-    vector<int> adj_list[n];                  // Adjacency List; Global "Array of Vector"; each index of the Array has a Vector
+    vector<int> adj_list[n];                  // Array of Vector; each index of the Array has a Vector
 
 
     while (e--)
