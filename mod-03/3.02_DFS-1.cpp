@@ -52,10 +52,10 @@ int main()
         adj_list[b].push_back(a);
     }
 
-    memset(visited_array,false,sizeof(visited_array));
+    memset(visited_array,false,sizeof(visited_array));                          // setting Visiting Array False
 
 
-    DFS(0);                           // calling DFS
+    DFS(0);                                  // calling DFS
 
 
     return 0;
@@ -77,6 +77,7 @@ Input:
 
 output:
 0 2 4 1 5 3 6
+
 
 
 */
