@@ -15,7 +15,7 @@ vector<pair<int, int>> d = {{-1,0},{1,0},{0,-1},{0,1}};
 int c, r;               // globally
 
 
-bool valid(int i, int j)                                // a function is used to Checj the index is Valid or Not; bcz Every Node doesn't have 4 child
+bool valid(int i, int j)                                // a function is used to Check the index is Valid or Not; bcz Every Node doesn't have 4 child
 {
     if(i<0 || i>=r || j<0 || j>=c)
     {
