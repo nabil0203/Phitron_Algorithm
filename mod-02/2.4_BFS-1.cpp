@@ -12,26 +12,28 @@ void bfs(int src)
 {
     queue<int> q;
     q.push(src);
-    visited_array[src] = true;                                               // after each push, we are making that index in Visited array TURE
+    visited_array[src] = true;                                                   // after each push, we are making that index in Visited_array TURE
 
     while (!q.empty())
     {
-        int par = q.front();                                // step(i); ber kore ana
+        int par = q.front();                                // step(i); ber kore ana; jake ber kore anteci oita 'par' ee rakha hocche
         q.pop();
 
 
 
-        cout << par << " ";                                 // step(ii); oi node niye kaj(print)
+        cout << par << " ";                                 // step(ii); oi node niye kaj (print the 'par')
 
 
 
-        for (int child : adj_list[par])                     // step(iii); children push into Vector
-        {
-            if(visited_array[child] == false)
+        for (int child : adj_list[par])                             // step(iii); children push into Vector;
+        {                                                           //'adj_list'-array er 'par' index ee jacchi; 'par'-index ee ekta vector ase; oi vector er ekta ekta value 'child' ee anci 
+        
+            if(visited_array[child] == false)                        // children already visited kina
             {
                 q.push(child);
-                visited_array[child] = true;                                       // after each push, we are making that index in Visited array TURE
+                visited_array[child] = true;                                           // after each push, we are making that index in Visited_array TURE
             }
+            
         }
     }
 }
