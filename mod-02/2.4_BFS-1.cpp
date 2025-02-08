@@ -25,10 +25,10 @@ void bfs(int src)
 
 
 
-        for (int child : adj_list[par])                             // step(iii); children push into Vector;
+        for (int child : adj_list[par])                      // step(iii); children push into Vector;
         {                                                           //'adj_list'-array er 'par' index ee jacchi; 'par'-index ee ekta vector ase; oi vector er ekta ekta value 'child' ee anci 
         
-            if(visited_array[child] == false)                        // children already visited kina
+            if(visited_array[child] == false)                        // children already visited kina; false=not visited, so can push
             {
                 q.push(child);
                 visited_array[child] = true;                                           // after each push, we are making that index in Visited_array TURE
