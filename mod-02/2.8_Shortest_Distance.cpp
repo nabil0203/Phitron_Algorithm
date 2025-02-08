@@ -24,7 +24,7 @@ void bfs(int src)
 
     visited_array[src] = true;
 
-    level[src] = 0;                                     // first value is level '0'
+    level[src] = 0;                                     // Source er level '0'
 
 
     while (!q.empty())
@@ -32,7 +32,7 @@ void bfs(int src)
         int par = q.front();
         q.pop();
 
-//      cout << par << " ";                                          // Don't need to print
+//      cout << par << " ";                                              // Don't need to print
 
         for (int child : adj_list[par])
         {
@@ -42,7 +42,7 @@ void bfs(int src)
 
                 visited_array[child] = true;
 
-                level[child] = level[par] + 1;                    // the child Level = parent level + 1
+                level[child] = level[par] + 1;                            // the child Level = parent level + 1
             }
         }
     }
@@ -64,7 +64,7 @@ int main()
 
     memset(visited_array, false, sizeof(visited_array));
 
-    memset(level, -1, sizeof(level));                               // initializing the Level as '-1'
+    memset(level, -1, sizeof(level));                               // initializing ALL the Level as '-1'
 
 
     int src, destination;
@@ -73,7 +73,7 @@ int main()
     bfs(src);
 
 
-    // for (int i = 0; i < n; i++)                          // checking the level of each node
+    // for (int i = 0; i < n; i++)                                  // checking the level of each node
     // {
     //     cout << i << " -> " << level[i] << endl;
     // }
