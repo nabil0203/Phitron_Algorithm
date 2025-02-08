@@ -48,7 +48,7 @@ void bfs(int src)
 
                 level[child] = level[par] + 1;
 
-                parent[child] = par;                                         // parent of child is par
+                parent[child] = par;                                         // parent of child = par
             }
         }
     }
@@ -77,7 +77,7 @@ int main()
     int src, destination;
     cin >> src >> destination;
 
-    bfs(src);                                  // function call
+    bfs(src);                                          // function call
 
 
     // for (int i = 0; i < n; i++)                                      // checking the parent of each node
@@ -87,19 +87,20 @@ int main()
 
 
 
-    vector<int> path;                                            // vector used to Reverse the path; Bcz we are getting the path Reversely at the beginning 
-    int node = destination;
+    vector<int> path;                                                  // vector used to Reverse the path; Bcz we are getting the path Reversely at the beginning
+    
+    int node = destination;                                           // Stars form Destination
 
-    while (node!= -1)
+    while (node!= -1)                                                 // Sourece node er Parent porjonto jabo; Source node Parent = -1
     {
-         path.push_back(node);
-        node = parent[node];
+        path.push_back(node);                                          // Node ke Vector ee push kore rakha hochhe 
+        node = parent[node];                                           // then protibar Node ke tar Parent node ee niye jacchi
     }
 
     reverse(path.begin(),path.end());                                // reversing that vector
     for(int x : path)
     {
-        cout << x << " ";
+        cout << x << " ";                                            // printing the path
     }
 
 
