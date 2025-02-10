@@ -1,5 +1,8 @@
 // https://leetcode.com/problems/find-if-path-exists-in-graph/description/
 
+// component connected kina
+// v-3.11
+// similar concept
 
 
 class Solution
@@ -24,7 +27,7 @@ public:
     bool validPath(int n, vector<vector<int>> &edges, int source, int destination)
     {
 
-        for (int i = 0; i < edges.size(); i++)                      // converting the edge list into adj_list
+        for (int i = 0; i < edges.size(); i++)                        // converting the edge list into adj_list
         {
             int a = edges[i][0];
             int b = edges[i][1];
