@@ -1,0 +1,10 @@
+
+                    |------------Undirected
+                    |                   |-------BFS
+                    |                   |-------DFS
+  Cycle-------------|
+Detection           |
+                    |
+                    |
+                    |-------------Directed
+                                        |-------DFS
