@@ -13,14 +13,14 @@ int distance_array[105];
 void dijkstra(int src)
 {
     queue<pair<int, int>> q;
-    q.push({src, 0});                       // mamually setting the destination as '0'
+    q.push({src, 0});                                   // mamually setting the destination as '0'
     distance_array[src] = 0;
 
     
 
     while (!q.empty())
     {
-        pair<int, int> par = q.front();                         // step(i); ber kore ana; ekta pair ber kore ana hocche
+        pair<int, int> par = q.front();                                 // step(i); ber kore ana; ekta pair ber kore ana hocche
         q.pop();
 
         int par_node = par.first;
@@ -55,7 +55,7 @@ void dijkstra(int src)
             int a, b, w;
             cin >> a >> b >> w;
 
-            adj_list[a].push_back({b, w});                  // pushing pair in vector
+            adj_list[a].push_back({b, w});                          // pushing pair in vector
             adj_list[b].push_back({a, w});
         }
 
