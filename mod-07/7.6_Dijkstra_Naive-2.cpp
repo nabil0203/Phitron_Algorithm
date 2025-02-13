@@ -28,7 +28,7 @@ void dijkstra(int src)
             int child_node = child.first;
             int child_dis = child.second;
 
-            if (par_dis + child_dis < distance_array[child_node])
+            if (par_dis + child_dis < distance_array[child_node])                           // path relaxaion
             {
                 distance_array[child_node] = par_dis + child_dis;
                 q.push({child_node, distance_array[child_node]});
@@ -36,6 +36,9 @@ void dijkstra(int src)
         }
     }
 }
+
+
+
 
 int main()
 {
