@@ -1,5 +1,5 @@
 // almost same as the BFS
-// the modifications are commneted
+// the modifications are commented
 
 #include <bits/stdc++.h>
 using namespace std;

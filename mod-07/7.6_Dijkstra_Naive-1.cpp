@@ -15,7 +15,7 @@ int distance_array[105];
 
 void dijkstra(int src)
 {
-    queue<pair<int, int>> q;                                                     // mamually setting the destination as '0'
+    queue<pair<int, int>> q;                                                     // manually setting the destination as '0'
     q.push({src, 0});                                                        // node push then distance
 
     while (!q.empty())
