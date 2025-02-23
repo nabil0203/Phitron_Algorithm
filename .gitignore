@@ -1,4 +1,4 @@
 *.exe
 .cph/
-output.txt
 input.txt
+output.txt
