@@ -1,0 +1,7 @@
+1. Only Traverse            : DFS
+
+2. Multipule source/start   : Floyd Warshall
+
+3. Single source/start      : BFS       (Shortest path)
+                              Dijkstra  (pos/neg Weight + no cycle)
+                              Bellman   (Negative Weight + cycle)
